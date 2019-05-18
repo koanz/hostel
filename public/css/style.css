@@ -1,0 +1,72 @@
+
+.top-navbar{
+	width: 100% !important;
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+
+#floating-social-container{
+	position: fixed !important;
+	width: 120px !important;
+	top: 22px !important;
+	right: 0px !important;
+	z-index: 99999 !important;
+}
+
+#social-list{
+	float:left;
+	margin-top: 0 !important;
+}
+
+#social-list li{
+	display:inline !important;
+	margin-right: 10px;
+}
+
+#social-icons-menu{
+	font-size: 1.8em;
+}
+
+#circle-instagram span:hover{
+	background-color: #fff;
+	transition: 1s ease;
+}
+
+.top-navbar-with-scroll{
+	width: 100% !important;
+}
+
+.slider{
+	position: absolute !important;
+	top: 0 !important;
+	height: 500px !important;
+}
+
+.loader-circle-hide{
+	display: none !important;
+}
+
+.loader-circle-show{
+	display: block !important;
+}
+
+#modal-location{
+}
+
+#location-container{
+	height:100%;
+    width:100%;
+}
+
+footer{
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+
+footer, .logo, .top-navbar-with-scroll{
+	background-color: #1C272B !important;
+}
+
+.div-footer-container ul li{
+	display: block;
+}
