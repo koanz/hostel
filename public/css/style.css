@@ -5,6 +5,10 @@
 	background-color: transparent !important;
 }
 
+.navbar-fixed{
+	transition: top 0.3s;
+}
+
 #floating-social-container{
 	position: fixed !important;
 	width: 120px !important;
@@ -65,6 +69,25 @@ footer{
 
 footer, .logo, .top-navbar-with-scroll{
 	background-color: #1C272B !important;
+}
+
+#footer-title-info{
+	font-size: 1.2em !important;
+	margin-top: 0px !important;
+	margin-bottom: 5px !important;
+}
+
+#footer-list-info{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#footer-list-info li{
+	display: inline;
+}
+
+.info{
+	font-size: 0.9em;
 }
 
 .div-footer-container ul li{

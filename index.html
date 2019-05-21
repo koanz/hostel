@@ -16,7 +16,7 @@
 		<title>Hostel</title>
 	</head>
 	<body>
-        <div class="navbar-fixed">
+        <div class="navbar-fixed" id="navbar-top">
             <nav class="top-navbar">
                 <div class="nav-wrapper">
                     <div class="container">
@@ -28,21 +28,6 @@
                             <li><a href="#habitaciones">Habitaciones</a></li>
                             <li><a href="#ubicacion">Ubicación</a></li>
                             <li><a href="#contacto">Contactenos</a></li>
-                            <!--<li><a class="waves-effect waves-light btn" href="#contacto">contactenos</a></li>-->
-                            <!--
-                            <li>
-                                <a class="grey-text text-lighten-3" href="http://www.instagram.com"><span class="fab fa-instagram" style="font-size: 2em; padding-top: 8px !important"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="http://www.facebook.com"><span class="fab fa-facebook-square" style="font-size: 2em;"></span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="grey-text text-lighten-3" href="http://www.twitter.com"><span class="fab fa-twitter" style="font-size: 2em;"></span>
-                                </a>
-                            </li>
-                            -->
                         </ul>
                     </div>
                 </div>
@@ -321,10 +306,11 @@
                 <div class="row">
                         <div class="scrollspy" id="ubicacion"></div>
                         <p class="white-text center"><strong>MAPA</strong></p>
-                        <!--The div element for the map -->
+                        <!--The div element for the map 
                         <div id="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.2712377712596!2d-55.90331918528093!3d-27.36724331890457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be30b6f83f8f%3A0x4ea896c5e775e1af!2sAv.+Corrientes+%26+Av.+Centenario%2C+Posadas%2C+Misi%C3%B3nes!5e0!3m2!1ses!2sar!4v1557766015066!5m2!1ses!2sar" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
+                        -->
                 </div>
             </div>
 
@@ -431,7 +417,7 @@
 
         <!-- Footer -->
         <footer class="page-footer section scrollspy" id="footer" style="padding-top: 10px;">
-            <div class="row show-on-small hide-on-med-and-up">
+            <div class="row show-on-small hide-on-med-and-up" style="margin-bottom: 0px;">
                 <div class="container">
                     <ul>
                         <li style="margin-bottom: 5px; display: inline;">
@@ -470,12 +456,22 @@
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    <ul>
-                        <li style="display: inline; margin-right: 15px;"><i class="material-icons" style="font-size: 1.2em;">local_phone</i><span style="font-size: 0.9em;">154000000 / 4400000</span></li>
-                        
-                        <li style="display: inline;"><i class="material-icons" style="font-size: 1.2em;">location_on</i><span style="font-size: 0.9em;">Av. Nombre 000.</span></li>
-                        <li style="display: inline;"><span style="font-size: 0.9em;">Ciudad - Provincia</span></li>
-                        <li style="display: inline;"><span>© 2019</span></li>
+                    <p id="footer-title-info"><strong>Información</strong></p>
+                    <ul id="footer-list-info">
+                        <li>
+                            <div class="col s6 m6">
+                                <!--<i class="material-icons" style="font-size: 1.2em;">location_on</i>--><span class="info">Av. Nombre 000</span>
+                            </div>
+                            <div class="col s6 m6">
+                                <span class="info">Ciudad - Provincia</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col s6 m6">
+                                <span class="info">154000000 / 4400000</span>
+                            </div>
+                        </li>                
+                        <li><span>© 2019</span></li>
                     </ul>
                 </div>
             </div>
@@ -487,13 +483,5 @@
         <script src="public/js/materialize-functions.js"></script>
         <script src="public/js/scrolling.js"></script>
         <script src="public/js/mail-response.js"></script>
-        <script>
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true
-            });
-
-            $('.carousel').slider();
-        </script>
 	</body>
 </html>
