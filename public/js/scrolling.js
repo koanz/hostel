@@ -4,7 +4,7 @@ window.onscroll = function() {
 
 
 function scrollFunction() {
-    if (document.body.scrollTop > 380 || document.documentElement.scrollTop >= 380) {
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop >= 350) {
         $("#top-button").fadeIn();
         $("nav").addClass("top-navbar-with-scroll");
         $("nav").removeClass("top-navbar");
