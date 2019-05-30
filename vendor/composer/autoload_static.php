@@ -22,6 +22,10 @@ class ComposerStaticInit6d49757d1ac07f2305a07d772b87740b
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
             'Symfony\\Polyfill\\Iconv\\' => 23,
         ),
+        'L' => 
+        array (
+            'Libs\\' => 5,
+        ),
         'E' => 
         array (
             'Egulias\\EmailValidator\\' => 23,
@@ -44,6 +48,10 @@ class ComposerStaticInit6d49757d1ac07f2305a07d772b87740b
         'Symfony\\Polyfill\\Iconv\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-iconv',
+        ),
+        'Libs\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/libs',
         ),
         'Egulias\\EmailValidator\\' => 
         array (

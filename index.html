@@ -3,15 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="Content-Language" content="es"/>
+        <meta http-equiv="Content-Language" content="ES"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
 		<!-- CSS -->
         <link rel="stylesheet" href="public/css/materialize.min.css">
         <link rel="stylesheet" href="public/css/style.css">
         <link rel="stylesheet" href="public/css/fontawesome.min.css">
         <link rel="stylesheet" href="public/css/brands.min.css">
         <!-- OTROS -->
+        <script src="public/js/jquery-3.4.1.min.js"></script>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<title>Hostel</title>
 	</head>
@@ -22,8 +23,8 @@
                     <div class="container">
                         <a href="" class="brand-logo"><i class="material-icons">cloud</i>Hostel</a>
                         <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                        <ul class="right hide-on-med-and-down" style="height: inherit;">
-                            <li><a href="#nosotros">Nosotros</a></li>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="tab"><a href="#nosotros">Nosotros</a></li>
                             <li><a href="#servicios">Servicios</a></li>
                             <li><a href="#habitaciones">Habitaciones</a></li>
                             <li><a href="#ubicacion">Ubicación</a></li>
@@ -34,8 +35,8 @@
             </nav>
         </div>
             
-        <ul class="sidenav" id="mobile" style="z-index: 1000;">
-            <li class="logo" style="padding: 4px 0 4px 0;">
+        <ul class="sidenav" id="mobile">
+            <li class="logo">
                 <a href="#" class="brand-logo white-text"><i class="material-icons white-text">cloud</i>HOSTEL</a>
             </li>
             <li><a href="#nosotros"><i class="material-icons">supervisor_account</i>NOSOTROS</a></li>
@@ -44,440 +45,414 @@
             <li><a href="#ubicacion"><i class="material-icons">location_on</i>UBICACION</a></li>
             <li><a href="#contacto"><i class="material-icons">email</i>CONTACTENOS</a></li>
         </ul>
-        
+         
         <div class="slider">
-            <ul class="slides" style="height: 500px !important;">
+            <ul class="slides">
                 <li>
-                    <img src="public/img/1.jpg">
+                    <img src="public/img/3.jpg" alt="imagen no disponible">
                     <div class="caption right-align">
-                        <h3>Landscape 1</h3>
-                        <h5 class="light grey-text text-lighten-3">Lorem Ipsum</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="public/img/3.jpg">
-                    <div class="caption right-align">
-                        <h3>Landscape 2</h3>
-                        <h5 class="light grey-text text-lighten-3">Lorem Ipsum</h5>
-                    </div>
-                </li>
-                <li>
-                    <img src="public/img/4.jpg">
-                    <div class="caption center-align">
-                        <h3>Landscape 3</h3>
-                        <h5 class="light grey-text text-lighten-3">Lorem Ipsum</h5>
+                        <h3>Landscape</h3>
+                        <h5 class="light grey-text text-lighten-3" style="font-family: Bw-Seido-Round-Demo-Light !important;">Lorem Ipsum is simply dummy text.</h5>
                     </div>
                 </li>
             </ul>
         </div>
-        <!--
-        <div class="carousel carousel-slider" style="position: absolute !important; top: 0 !important; height: 500px !important;">
-            <a class="carousel-item" href="#one!"><img src="public/img/1.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="public/img/2.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="public/img/3.jpg"></a>
-        </div>
-        -->
+
         <div class="container">
-            <div class="section" style="margin-top: 380px;">
+            <div class="section" style="margin-top: 380px;"> 
                 <div class="row">
                     <div class="col">
                         <div class="section">
-                            <h2 class="header center" style="color: #009688;">Nosotros</h2>
-                            <div class="scrollspy" id="nosot"></div>
-                            <p class="grey-text text-darken-3 lighten-3 scrollspy" id="nosotros" style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <h2 class="header center main-title">Nosotros</h2>
+                            <p class="grey-text text-darken-3 lighten-3 scrollspy p-justify-text" id="nosotros">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="divider"></div>
-
             <div class="section">
+                <h2 class="header center-align main-title">Servicios</h2>
                 <div class="row">
-                    <h2 class="header center-align" style="color: #009688;">Servicios</h2>
-                    <div class="row">
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <div class="scrollspy" id="servicios"></div>
-                                <i class="material-icons" style="font-size: 7rem;">restaurant</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">Restaurante</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <i class="material-icons" style="font-size: 7rem;">wifi</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">WiFi</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <i class="material-icons" style="font-size: 7rem;">pool</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">Piscina</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <div class="scrollspy" id="servicios"></div>
+                            <i class="material-icons" style="font-size: 7rem;">restaurant</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">Restaurante</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
                         </div>
                     </div>
-                </div>  
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <i class="material-icons" style="font-size: 7rem;">wifi</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">WiFi</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <i class="material-icons" style="font-size: 7rem;">pool</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">Piscina</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <div class="divider"></div>
-
             <div class="section">
+                <h2 class="header center-align scrollspy main-title">Habitaciones</h2>
                 <div class="row">
-                    <h2 class="header center-align scrollspy" style="color: #009688;">Habitaciones</h2>
-                    <div class="row">
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <div class="scrollspy" id="habitaciones"></div>
-                                <i class="material-icons" style="font-size: 7rem;">person</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">Habitaciones individuales</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <i class="material-icons" style="font-size: 7rem;">people</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">Habitaciones compartidas</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 l4">
-                            <div class="center promo promo-example">
-                                <i class="material-icons" style="font-size: 7rem;">ac_unit</i>
-                                <p class="promo-caption" style="font-size: 1.7rem; font-weight: 500;">A/C</p>
-                                <p class="light center" style="text-align: justify;">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                </p>
-                            </div>
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <div class="scrollspy" id="habitaciones"></div>
+                            <i class="material-icons" style="font-size: 7rem;">person</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">Habitaciones individuales</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="public/img/room-1.jpg">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click for more info!">Test 1<i class="material-icons right">more_vert</i></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <div class="chip">
-                                        <i class="material-icons">local_hotel</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">free_breakfast</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">wifi</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">tv</i>
-                                    </div>
-                                    <div class="card-image">
-                                        <img class="materialboxed" src="public/img/room-1.jpg">
-                                        <span class="card-title">Test 1</span>
-                                    </div>
-
-                                </div>
-                              </div>
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <i class="material-icons" style="font-size: 7rem;">people</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">Habitaciones compartidas</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
                         </div>
-
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="public/img/room-1.jpg">
+                    </div>
+                    <div class="col s12 m4 l4">
+                        <div class="center promo promo-example">
+                            <i class="material-icons" style="font-size: 7rem;">ac_unit</i>
+                            <p class="promo-caption center" style="font-family: Bw-Seido-Round-Demo-Medium; font-size: 1.7rem; font-weight: 500;">A/C</p>
+                            <p class="light center p-justify-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="public/img/room-1.jpg" alt="imagen no disponible">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click para más información!">Test 1<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
+                                <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="chip">
+                                    <i class="material-icons">local_hotel</i>
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click for more info!">Test 1<i class="material-icons right">more_vert</i></span>
+                                <div class="chip">
+                                    <i class="material-icons">free_breakfast</i>
                                 </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <div class="chip">
-                                        <i class="material-icons">local_hotel</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">free_breakfast</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">wifi</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">tv</i>
-                                    </div>
-                                    <div class="card-image">
-                                        <img class="materialboxed" src="public/img/room-1.jpg">
-                                        <span class="card-title">Test 1</span>
-                                    </div>
+                                <div class="chip">
+                                    <i class="material-icons">wifi</i>
+                                </div>
+                                <div class="chip">
+                                    <i class="material-icons">tv</i>
+                                </div>
+                                <div class="card-image">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="public/img/room-1.jpg">
+                          </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="public/img/room-1.jpg" alt="imagen no disponible">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click para más información!">Test 1<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
+                                <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="chip">
+                                    <i class="material-icons">local_hotel</i>
                                 </div>
-                                <div class="card-content">
-                                    <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click for more info!">Test 1<i class="material-icons right">more_vert</i></span>
+                                <div class="chip">
+                                    <i class="material-icons">free_breakfast</i>
                                 </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                    <div class="chip">
-                                        <i class="material-icons">local_hotel</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">free_breakfast</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">wifi</i>
-                                    </div>
-                                    <div class="chip">
-                                        <i class="material-icons">tv</i>
-                                    </div>
-                                    <div class="card-image">
-                                        <img class="materialboxed" src="public/img/room-1.jpg">
-                                        <span class="card-title">Test 1</span>
-                                    </div>
+                                <div class="chip">
+                                    <i class="material-icons">wifi</i>
+                                </div>
+                                <div class="chip">
+                                    <i class="material-icons">tv</i>
+                                </div>
+                                <div class="card-image">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img class="materialboxed" src="public/img/room-1.jpg">
-                                  <span class="card-title">Room 1</span>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="public/img/room-1.jpg" alt="imagen no disponible">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click para más información!">Test 1<i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4 tooltipped" data-position="bottom" data-tooltip="Click to close">Test 1<i class="material-icons right">close</i></span>
+                                <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="chip">
+                                    <i class="material-icons">local_hotel</i>
                                 </div>
-                                <div class="card-content">
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <div class="chip">
+                                    <i class="material-icons">free_breakfast</i>
+                                </div>
+                                <div class="chip">
+                                    <i class="material-icons">wifi</i>
+                                </div>
+                                <div class="chip">
+                                    <i class="material-icons">tv</i>
+                                </div>
+                                <div class="card-image">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
+                                </div>
+                                <div class="card-image" style="margin-top: 10px;">
+                                    <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                                    <span class="card-title">Test 1</span>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img class="materialboxed" src="public/img/room-1.jpg">
-                                  <span class="card-title">Room 2</span>
-                                </div>
-                                <div class="card-content">
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                              <span class="card-title">Test 2</span>
+                            </div>
+                            <div class="card-content">
+                              <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image">
-                                  <img class="materialboxed" src="public/img/room-1.jpg">
-                                  <span class="card-title">Room 3</span>
-                                </div>
-                                <div class="card-content">
-                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                              <span class="card-title">Test 2</span>
+                            </div>
+                            <div class="card-content">
+                              <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                              <img class="materialboxed" src="public/img/room-1.jpg" alt="imagen no disponible">
+                              <span class="card-title">Test 2</span>
+                            </div>
+                            <div class="card-content">
+                              <p class="p-justify-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="divider"></div>
-
-            <div class="section" >
-                <h2 class="header center-align scrollspy" style="color: #009688;">Ubicación</h2>
+            <div class="section">
+                <h2 class="header center-align main-title">Ubicación</h2>
                 <div class="row">
-                        <div class="scrollspy" id="ubicacion"></div>
-                        <p class="white-text center"><strong>MAPA</strong></p>
-                        <!--The div element for the map 
-                        <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.2712377712596!2d-55.90331918528093!3d-27.36724331890457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be30b6f83f8f%3A0x4ea896c5e775e1af!2sAv.+Corrientes+%26+Av.+Centenario%2C+Posadas%2C+Misi%C3%B3nes!5e0!3m2!1ses!2sar!4v1557766015066!5m2!1ses!2sar" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                        -->
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="section" style="margin-bottom: 50px;">
-                <!--
-                <div class="row" style="margin-bottom: 0;">
-                    <div class="container">
-                        <h2 class="header center-align" style="color: #009688;">Contactenos</h2>
+                    <div class="col s12 center">
+                        <strong><span style="font-size: 18px; color: rgba(0,0,0,0.87);">Dirección:</span><span class="grey-text" style="font-family: Bw-Seido-Round-Demo-Medium;"> Av. Nombre 000. Ciudad - Provincia. CP 0000</span></strong>
                     </div>
                 </div>
-                -->
-                <h2 class="header center-align scrollspy" style="color: #009688;">Contactenos</h2>
                 <div class="row">
-                    <!--<div class="container section">-->
-                        <div class="card hoverable">
-                            <div class="scrollspy" id="contacto"></div>
-                            <form method="POST" id="process-form" class="card-content">
-                                <div class="row">
-                                    <div class="input-field col s12 m6 l4">
-                                        <i class="material-icons prefix">account_box</i>
-                                        <input type="text" id="nombre" name="nombre" class="validate" required>
-                                        <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
-                                        <label for="nombre">Nombre</label>
-                                    </div>
-                                    
-                                    <div class="input-field col s12 m6 l4">
-                                        <i class="material-icons prefix">contact_phone</i>
-                                        <input type="text" id="telefono" name="telefono" class="validate">
-                                        <label for="telefono">Teléfono</label>
-                                    </div>
-                                    <div class="input-field col s12 m12 l4">
-                                        <i class="material-icons prefix">contact_mail</i>
-                                        <input type="email" id="email" name="email" class="validate" required>
-                                        <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
-                                        <label for="email">E-mail</label>
-                                    </div>
+                    <div class="scrollspy" id="ubicacion"></div>
+                    
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3543.2712377712596!2d-55.90331918528093!3d-27.36724331890457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457be30b6f83f8f%3A0x4ea896c5e775e1af!2sAv.+Corrientes+%26+Av.+Centenario%2C+Posadas%2C+Misi%C3%B3nes!5e0!3m2!1ses!2sar!4v1557766015066!5m2!1ses!2sar" width="100%" height="400px" frameborder="0" style="border:0" title="Map Example" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="section" id="section-contact">
+                <h2 class="header center-align main-title">Contactenos</h2>
+                <div class="row">
+                    <div class="col s12 center">
+                        <strong><span style="font-size: 18px; color: rgba(0,0,0,0.87);">Teléfono:</span><span class="grey-text" style="font-family: Bw-Seido-Round-Demo-Medium;"> 000000 - 1500000</span></strong>
+                    </div>
+                    <div class="col s12 center">
+                        <strong><span style="font-size: 18px; color: rgba(0,0,0,0.87);">E-mail:</span><span class="grey-text"> <a href="mailto:email@email.com" style="font-family: Bw-Seido-Round-Demo-Medium; color: #00BAD0;">email@email.com</a></span></strong>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card hoverable">
+                        <div class="scrollspy" id="contacto"></div>
+                        <form method="POST" id="process-form" class="card-content">
+                            <div class="row">
+                                <div class="input-field col s12 m6 l4">
+                                    <i class="material-icons prefix">account_box</i>
+                                    <input type="text" id="nombre" name="nombre" class="validate" required>
+                                    <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
+                                    <label for="nombre">Nombre</label>
                                 </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <i class="material-icons prefix">insert_comment</i>
-                                        <input type="text" id="mensaje" name="mensaje" class="validate" required>
-                                        <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
-                                        <label for="mensaje">Mensaje</label>
-                                    </div>
+                                
+                                <div class="input-field col s12 m6 l4">
+                                    <i class="material-icons prefix">contact_phone</i>
+                                    <input type="text" id="telefono" name="telefono" class="validate">
+                                    <label for="telefono">Teléfono</label>
                                 </div>
-                                <div class="row loader-circle-hide" id="loader-circle">
-                                    <div class="container" style="width: 37px; margin: 0 auto;">
-                                        <div class="preloader-wrapper small active">
-                                            <div class="spinner-layer spinner-green-only">
-                                                <div class="circle-clipper left">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                <div class="gap-patch">
-                                                    <div class="circle"></div>
-                                                </div>
-                                                <div class="circle-clipper right">
-                                                    <div class="circle"></div>
-                                                </div>
+                                <div class="input-field col s12 m12 l4">
+                                    <i class="material-icons prefix">contact_mail</i>
+                                    <input type="email" id="email" name="email" class="validate" required>
+                                    <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
+                                    <label for="email">E-mail</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">insert_comment</i>
+                                    <input type="text" id="mensaje" name="mensaje" class="validate" required>
+                                    <span class="helper-text" data-error="Campo requerido" data-success="Completo">Campo requerido</span>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="row loader-circle-hide" id="loader-circle">
+                                <div class="container" style="width: 37px; margin: 0 auto;">
+                                    <div class="preloader-wrapper small active">
+                                        <div class="spinner-layer spinner-green-only">
+                                            <div class="circle-clipper left">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="gap-patch">
+                                                <div class="circle"></div>
+                                            </div>
+                                            <div class="circle-clipper right">
+                                                <div class="circle"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="center">
-
-                                    <button class="btn waves-effect waves-light" id="submit">Enviar
-                                        <i class="material-icons left">email</i>
-                                    </button>
-                                </div>                            
-                            </form>
-                        </div>
-                    <!--</div>-->
+                            </div>
+                            <div class="center">
+                                <button class="btn waves-effect waves-light" id="submit">Enviar
+                                    <i class="material-icons left">email</i>
+                                </button>
+                            </div>                            
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <div class="col hide-on-small-only m3 l2" style="top: 35%; right: 5px; z-index: 9999; position: fixed;">
+        <!-- Social medias floating -->
+        <div class="col hide-on-small-only m3 l2" style="top: 50%; right: 5px; z-index: 99; position: fixed;">
             <ul>
                 <li style="margin-bottom: 5px;">
-                    <a class="btn-floating red" href="http://www.instagram.com">
+                    <a class="btn-floating btn-medium waves-effect waves-light red" href="#">
                         <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li style="margin-bottom: 5px;">
-                    <a class="btn-floating blue lighten-2" href="http://www.instagram.com">
+                    <a class="btn-floating btn-medium waves-effect waves-light blue lighten-2" href="#">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li style="margin-bottom: 5px;">
-                    <a class="btn-floating blue accent-4" href="http://www.instagram.com">
+                    <a class="btn-floating btn-medium waves-effect waves-light blue accent-4" href="#">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
             </ul>
         </div>
-        
-
+        <!-- Uptotop arrow -->
         <div class="fixed-action-btn" id="top-button" style="display: none; right: 5px !important;">
             <a class="btn-floating btn red">
                 <i class="material-icons">arrow_upward</i>
             </a>
         </div>
-
         <!-- Footer -->
         <footer class="page-footer section scrollspy" id="footer" style="padding-top: 10px;">
             <div class="row show-on-small hide-on-med-and-up" style="margin-bottom: 0px;">
                 <div class="container">
-                    <ul>
-                        <li style="margin-bottom: 5px; display: inline;">
+                    <ul class="media-bottom">
+                        <li>
                             <div class="col s4 center">
-                                <a class="btn-floating red" href="http://www.instagram.com">
+                                <a class="btn-floating red" href="#">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                                 <div class="row">
-                                    <strong class="hide-on-med-and-dow">Seguinos en Instagram</strong>
+                                    <strong class="hide-on-med-and-dow" style="font-family: Bw-Seido-Round-Demo-Medium;">Seguinos en Instagram</strong>
                                 </div>
                             </div>
                         </li>
-                        <li style="margin-bottom: 5px; display: inline;">
+                        <li>
                             <div class="col s4 center">
-                                <a class="btn-floating blue lighten-2" href="http://www.instagram.com">
+                                <a class="btn-floating blue lighten-2" href="#">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                                 <div class="row">
-                                    <strong class="hide-on-med-and-dow">Seguinos en Twitter</strong>
+                                    <strong class="hide-on-med-and-dow" style="font-family: Bw-Seido-Round-Demo-Medium;">Seguinos en Twitter</strong>
                                 </div>
                             </div>
                         </li>
-                        <li style="margin-bottom: 5px; display: inline;">
+                        <li>
                             <div class="col s4 center">
-                                <a class="btn-floating blue accent-4" href="http://www.instagram.com">
+                                <a class="btn-floating blue accent-4" href="#">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <div class="row">
-                                    <strong class="hide-on-med-and-dow">Seguinos en Facebook</strong>
+                                    <strong class="hide-on-med-and-dow" style="font-family: Bw-Seido-Round-Demo-Medium;">Seguinos en Facebook</strong>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                
             </div>
             <div class="footer-copyright">
                 <div class="container">
-                    <p id="footer-title-info"><strong>Información</strong></p>
                     <ul id="footer-list-info">
                         <li>
-                            <div class="col s6 m6">
-                                <!--<i class="material-icons" style="font-size: 1.2em;">location_on</i>--><span class="info">Av. Nombre 000</span>
-                            </div>
-                            <div class="col s6 m6">
-                                <span class="info">Ciudad - Provincia</span>
-                            </div>
+                            <a href="" class="brand-logo white-text" style="font-family: Bw-Seido-Round-Demo-Light;"><i class="material-icons">cloud</i> 2019</a> ©
                         </li>
-                        <li>
-                            <div class="col s6 m6">
-                                <span class="info">154000000 / 4400000</span>
-                            </div>
-                        </li>                
-                        <li><span>© 2019</span></li>
                     </ul>
                 </div>
             </div>
         </footer>
         <!-- JS -->
-        <script src="public/js/jquery-3.4.1.min.js"></script>
+        
         <script src="public/js/materialize.min.js"></script>
         <script href="public/js/fontawesome.min.js"></script>
         <script src="public/js/materialize-functions.js"></script>

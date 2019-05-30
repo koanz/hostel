@@ -5,8 +5,82 @@
 	background-color: transparent !important;
 }
 
+.top-navbar-with-scroll{
+	width: 100% !important;
+}
+
+.top-navbar-with-scroll, .logo, footer, section h2{
+	background-color: #004C5E !important;
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Black";
+  src: url("../fonts/BwSeidoRoundDemo-Black.otf");
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Bold";
+  src: url("../fonts/BwSeidoRoundDemo-Bold.otf");
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Light";
+  src: url("../fonts/BwSeidoRoundDemo-Light.otf");
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Medium";
+  src: url("../fonts/BwSeidoRoundDemo-Medium.otf");
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Regular";
+  src: url("../fonts/BwSeidoRoundDemo-Regular.otf");
+}
+
+@font-face {
+  font-family: "Bw-Seido-Round-Demo-Thin";
+  src: url("../fonts/BwSeidoRoundDemo-Thin.otf");
+}
+
+.nav-wrapper a, ul li {
+	font-family: Bw-Seido-Round-Demo-Light;
+}
+
+.main-title{
+	color: #004C5E;
+}
+
+.main-title, h3, span {
+	font-family: Bw-Seido-Round-Demo-Medium !important;
+}
+
 .navbar-fixed{
 	transition: top 0.3s;
+}
+
+.slider{
+	position: absolute !important;
+	top: 0 !important;
+	/* ORIGINAL */
+	/*height: 450px !important;*/
+}
+
+.sidenav{
+	z-index: 1000;
+}
+
+.logo{
+	padding: 4px 0 4px 0;
+}
+
+.p-justify-text{
+	text-align: justify;
+	font-family: Bw-Seido-Round-Demo-Regular;
+}
+
+#section-contact{
+	margin-bottom: 50px;
 }
 
 #floating-social-container{
@@ -31,19 +105,14 @@
 	font-size: 1.8em;
 }
 
+.media-bottom li{
+	margin-bottom: 5px;
+	display: inline;
+}
+
 #circle-instagram span:hover{
 	background-color: #fff;
 	transition: 1s ease;
-}
-
-.top-navbar-with-scroll{
-	width: 100% !important;
-}
-
-.slider{
-	position: absolute !important;
-	top: 0 !important;
-	height: 450px !important;
 }
 
 .loader-circle-hide{
@@ -54,9 +123,6 @@
 	display: block !important;
 }
 
-#modal-location{
-}
-
 #location-container{
 	height:100%;
     width:100%;
@@ -65,10 +131,6 @@
 footer{
 	padding-left: 10px !important;
 	padding-right: 10px !important;
-}
-
-footer, .logo, .top-navbar-with-scroll{
-	background-color: #1C272B !important;
 }
 
 #footer-title-info{

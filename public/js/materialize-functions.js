@@ -3,9 +3,9 @@ $(document).ready(function(){
 
     $('.scrollspy').scrollSpy();
 
-    $('input#input_text, textarea#textarea2').characterCounter();
-
-    $('.slider').slider();
+    $('.slider').slider({
+        indicators: false
+    });
 
     $("#top-button").click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -14,9 +14,11 @@ $(document).ready(function(){
 
     $('.materialboxed').materialbox();
 
-    $('.dropdown-trigger').dropdown();
-
     $('.tooltipped').tooltip();
 
-    $('.modal').modal();
+    $(".sidenav").click(function(){
+        var instance = M.Sidenav.getInstance(document.getElementById("mobile"));
+
+        instance.close();
+    });
 });

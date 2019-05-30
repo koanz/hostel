@@ -2,7 +2,6 @@
 	require_once 'vendor/autoload.php';
 	require_once 'vendor/swiftmailer/swiftmailer/lib/swift_required.php';
 	require_once 'config/smtp.php';
-	require_once 'HTMLformattEmail.php';
 
 	if(isInputsValid($_POST)){
 		$name = $_POST['nombre'];
@@ -15,20 +14,19 @@
 			->setPassword($smtpData['smtpPass']);
 
 			$mailer = new Swift_Mailer($transport);
-			$htmlEmail = (new HTMLformattEmail())->getRenderHTMLformatt($name, $phone, $email, $message);
+			$htmlEmail = (new \Libs\HTMLformattEmail())->getRenderHTMLwithMessage($name, $phone, $email, $message);
 
 			$mssg = (new Swift_Message('Notificación: Hostel - Consulta'))
 			->setFrom([$email => 'Hostel - Formulario de contacto'])
 		  	->setTo(['cristiananzawa@gmail.com'])
 		  	->setBody($htmlEmail, 'text/html');
 
-			if($mailer->send($mssg)){
+			if($mailer->send($mssg))
 				echo json_encode("Muchas gracias por comunicarse con nosostros!");
-			}else{
-				echo json_encode("No se ha podido establecer la comunicaci&oacuten.<br>Vuelva a intentarlo nuevamente!");
-			}
+			else
+				throw new Exception();
+			
 		}catch(Exception $e){
-			//echo throw new Exception("No se ha podido establecer la comunicación.<br>Vuelva a intentarlo nuevamente!");
 			echo json_encode("No se ha podido establecer la comunicaci&oacuten.<br>Vuelva a intentarlo nuevamente!");
 		}
 	}else{
@@ -36,10 +34,6 @@
 	}
 	
 	function isInputsValid($inputs){
-		if(isset($inputs['nombre']) && isset($inputs['email']) && isset($inputs['mensaje'])){
-			return true;
-		}
-		
-		return false;
+		return (isset($inputs['nombre']) && isset($inputs['email']) && isset($inputs['mensaje'])) ? true : false;
 	}
 ?>
