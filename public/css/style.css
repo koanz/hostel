@@ -1,8 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.logo-display{
+	display: block !important;
+}
+
+.logo-hide{
+	display: none !important;
+}
 
 .top-navbar{
 	width: 100% !important;
 	box-shadow: none !important;
-	background-color: transparent !important;
+	background-color: #004C5E !important;
 }
 
 .top-navbar-with-scroll{
@@ -12,6 +24,47 @@
 .top-navbar-with-scroll, .logo, footer, section h2{
 	background-color: #004C5E !important;
 }
+
+@media only screen and (max-width: 601px){
+	nav{
+		height: 64px !important;
+	}
+
+	.inner-cover img{
+		margin-top: 8px !important;
+	}
+}
+
+nav ul li a{
+	transition: color .4s;
+	-webkit-transition: color .4s;
+	-moz-transition: color .4s;
+	-o-transition: color .4s;
+} 
+
+nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #00BAD0;
+}
+
+.brand-logo{
+	height: 57px !important;
+	padding-top: 7px!important;
+}
+
+.cover{
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding-bottom: 20px;
+	background-color: #004C5E;
+}
+
+.inner-cover{
+	width: 80%;
+	height: auto;
+}
+
 
 @font-face {
   font-family: "Bw-Seido-Round-Demo-Black";
@@ -44,7 +97,7 @@
 }
 
 .nav-wrapper a, ul li {
-	font-family: Bw-Seido-Round-Demo-Light;
+	font-family: Bw-Seido-Round-Demo-Medium;
 }
 
 .main-title{
@@ -63,7 +116,6 @@
 	position: absolute !important;
 	top: 0 !important;
 	/* ORIGINAL */
-	/*height: 450px !important;*/
 }
 
 .sidenav{
@@ -81,6 +133,41 @@
 
 #section-contact{
 	margin-bottom: 50px;
+}
+
+.social-media-floating-btn{
+	border-radius: 0 !important;
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+.social-media-floating-btn:hover{
+	width: 50px;
+	padding-right: 50px;
+}
+
+.btn-social-media-bottom-instagram,
+.btn-social-media-bottom-twitter,
+.btn-social-media-bottom-facebook{
+	background-color: #004C5E;
+	transition: all .3s ease-in-out;
+	-webkit-transition: background-color .3s ease-in-out;
+	-moz-transition: background-color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out;   
+}
+
+.btn-social-media-bottom-instagram:hover{
+	background-color: #f44336;
+}
+
+.btn-social-media-bottom-twitter:hover{
+	background-color: #64b5f6;
+}
+
+.btn-social-media-bottom-facebook:hover{
+	background-color: #2962ff
 }
 
 #floating-social-container{
