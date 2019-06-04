@@ -112,11 +112,11 @@ nav ul a:hover {
 	transition: top 0.3s;
 }
 
-.slider{
+/*.slider{
 	position: absolute !important;
 	top: 0 !important;
-	/* ORIGINAL */
-}
+	/* ORIGINAL *
+}*/
 
 .sidenav{
 	z-index: 1000;
